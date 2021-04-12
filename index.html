@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles/jquery-ui.css" >
+    <link rel=stylesheet href="styles/style.css" type="text/css">
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+        <script src="/plugins/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    </header>
+    <body> 
+        <audio id="musica" src="audio/Foot Step In The Dark - Instrumental.mp3" loop="true"></audio>
+        <div class="musicbuttons">
+            <button class="roundB" onclick = "document.getElementById('musica').play()">&#9654</button>
+            <button class="roundB" onclick = "document.getElementById('musica').pause()">&#10074 &#10074</button>
+         </div>
+        <div class=header>
+
+            <img src="images/superWATCHES.png">
+            <div class=social>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><h3 id="fb">Facebook</h3></a> 
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><h3 id="insta">Instagram</h3> </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><h3 id="twatter" >Twitter</h3> </a>
+            </div>
+         
+        </div>
+        <div class="flex-container">
+            <img id="loadingimage" src="images/superWATCHES.png">
+            <div class="lds-hourglass"></div>
+          
+            <div id="loadingtext"><h1>Always Watching</h1> </div>
+            <div class="left">
+                <div class="innerleft" id="steveleft">
+                    <br>
+                    <br>
+                    <h4 id="t1">Dive down to depths of 1200m and kick some shark arse!</h4>
+                    <br>
+                    <br>
+                    <h4 id="t2">Wristband made from recycled gater skin!</h4>
+                    <br>
+                    <br>
+                    <h4 id="t3">Luminescent details ideal for nighttime hunting</h4>
+                </div> 
+                <div class="clock-div">
+                    <img id="steve" src="images/watch1.png">
+                    <h1>The Steve Irwin</h1>
+                    <h2>Crickey Mate what a watch! Stay fashionable both in the office and in the wild!</h2>
+              
+                </div>
+                <div class="innerright" id="steveright">
+                    <br>
+                    <br>
+                    <h4 id="t1">Bulletproof glass with bulletproof technology for bulletproof purposes</h4>
+                    <br>
+                    <br>
+                    <h4 id="t2">200km gater radar!</h4>
+                    <br>
+                    <br>
+                    <h4 id="t3">Bronze casing (plastic w bronzepaint)</h4>
+                </div>
+              
+                <button class=roundB id="leftExpandB">+</button>
+                <button class=roundB id="leftShrinkB">-</button>
+
+            </div>
+            <div class="middle">
+
+                <div class="innerleft" id="meanleft">
+                    <br>
+                    <br>
+                    <h4>Without this watch, you can't sit with us</h4>
+                    <br>
+                    <br>
+                    <h4>More of an accessory but it also works sometimes</h4>
+                    <br>
+                    <br>
+                    <h4>Wristband looks identical to a "Michelin SR-A All Terrain Truck Tire" - with imroved road performance</h4>
+                </div> 
+               
+                <div class="clock-div">
+                    <img src="images/watch2.png">
+                    <h1>The Mean Girl</h1>
+                    <h2>On Wednesdays, we wear pink.</h2>
+                </div>
+                <button class=roundB id="middleExpandB">+</button>
+                <button class=roundB id="middleShrinkB">-</button>
+
+                <div class="innerright" id="meanright">
+                    <br>
+                    <br>
+                    <h4>Not actually pink, more rose gold ish</h4>
+                    <br>
+                    <br>
+                    <h4>Has up to three buttons on it's right side</h4>
+                    <br>
+                    <br>
+                    <h4>Enables the wearer to tell time</h4>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="innerleft" id="goldleft">
+                    <br>
+                    <br>
+                    <h4>King Midas would be impressed</h4>
+                    <br>
+                    <br>
+                    <h4>Time is displayed digitally and grows linear</h4>
+                    <br>
+                    <br>
+                    <h4>LIGHT MODE. WOW.</h4>
+                </div> 
+                <div class="clock-div">  
+                     
+
+                    <img src="images/watch4.png" id="goldwatch">
+                    <h1>The Gilded Wrist</h1>
+                    <h2>Gold is money, everything else is credit. Wear your worth. </h2>
+                    <button class=roundB id="rightExpandB">+</button>
+                    <button class=roundB id="rightShrinkB">-</button>
+                    
+                </div>
+                <div class="innerright" id="goldright">
+                    <br>
+                    <br>
+                    <h4>Up to 60 seconds per minute!</h4>
+                    <br>
+                    <br>
+                    <h4>Stop function enables manipulation of the very fabric of time!</h4>
+                    <br>
+                    <br>
+                    <h4>Att tala är silver men att ha den här klockan är guld.</h4>
+                </div>
+                
+
+            </div>
+        </div>
+    </body>
+    <script src="scripts/code.js" type="application/javascript"></script>
+</html>

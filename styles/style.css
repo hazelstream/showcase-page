@@ -1,0 +1,272 @@
+html, body {
+    background: #b2d4f0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b2d4f0,#b692d4 , #325be2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b2d4f0,#b692d4, #325be2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    height: 100%;
+    align-items: center;
+ /*    align-items: unset; */
+    width: 100%;
+    text-align: center; 
+    justify-content: center;
+}
+
+.left {
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0e46be, #64b3f4, #0e46be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex: 1;
+ /*    transition: all 0.75s ease-in-out; */
+    display: none;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.middle {
+    background: #834d9b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,  #4a0269, #c85dce, #4a0269); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex: 1;
+    /* transition: all 0.75s ease-in-out; */
+    display:none;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.right {
+    background: #b3a424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd118, #f58a10);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,  #f58a10, #e7cb58, #f58a10); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex: 1;
+   /*  transition: all 0.75s ease-in-out; */
+    display: none;
+ /*    height: 100%;
+    width: 100%; */
+    pointer-events: none;
+}
+
+.clock-div {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.clock-div img {
+    padding-top: 100px;
+    max-width: 350px;
+    width: 40%;
+    height: 60%;
+
+    
+}
+.roundB {
+    background-color: white;
+    opacity: 50%;
+    border: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px ;
+    font-size: 50px;
+    display: none;
+}
+.roundB:hover{
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.roundB:focus {
+    outline: none;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "Century Gothic", "sans-serif", "monospace";
+    font-weight: normal;
+    
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    font-family: "Century Gothic", "sans-serif", monospace;
+    width: 400px;
+    font-weight: normal;
+    display: none;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    font-family: "Century Gothic", "sans-serif", monospace;
+    font-weight: normal;
+}
+
+h4 {
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Century Gothic", "sans-serif", monospace;
+    font-weight: normal;
+    transition: 0.5s;
+}
+
+h4:hover {
+    letter-spacing: 1px;
+}
+
+
+
+.header {
+    display:none;
+}
+
+
+.header img{
+    position: fixed;
+    left: 10px;
+    width: 350px;
+    height: auto;
+}
+
+.social #fb{
+    position: fixed;
+    top: -10px;
+    right: 210px;  
+}
+
+.social #fb:hover{
+    animation: blinker 2s infinite alternate;
+    cursor: pointer;
+}
+
+.social #insta{
+    position: fixed;
+    top: -10px;
+    right: 90px;
+}
+.social #insta:hover{
+    animation: blinker 2s infinite;
+    cursor: pointer;
+}
+
+.social #twatter{
+    position: fixed;
+    top: -10px;
+    right: 10px;
+}
+
+.social #twatter:hover{
+    animation: blinker 2s infinite;
+    cursor: pointer;
+}
+
+
+@keyframes blinker {
+    0% {
+        Color: rgb(0, 241, 20);
+    }
+    25% {
+        Color: rgb(0, 255, 242)
+    }
+    50% {
+        Color: rgb(255, 0, 255);
+    }
+    75% {
+        Color: rgb(245, 129, 21);
+    }
+
+}
+
+.innerleft {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20vw; 
+   /*  font-size: 10vh; */
+}
+
+.innerright {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 20vw;
+    max-width: 20vw;
+}
+
+.musicbuttons {
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    left: 5px;
+    flex-direction: row;
+}
+
+.musicbuttons .roundB {
+    margin: 2px 2px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+
+}
+
+.lds-hourglass {
+    display: inline-block;
+    /* display: none; */
+    position: relative;
+    width: 80px;
+    height: 80px;
+    
+  }
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.8s infinite;
+  }
+
+@keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+@keyframes h4animation {
+    to {
+        letter-spacing: 1px;
+    }
+}
+  
+ 
